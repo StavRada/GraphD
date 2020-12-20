@@ -22,7 +22,7 @@ public class Ex2 implements Runnable{
 	private static Arena _ar;
 	private int scenario_num=0;
 	private int id=0;
-
+//main to start the game
 	public static void main(String[] a) {
 	
 		//start from gui
