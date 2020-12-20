@@ -70,4 +70,5 @@ moveAgents- this function moves the agent with shortest path algorithm.
 nextNode- this function checks what the shortest path to the pokemon.
 Init- this function initialize the game gui, get pokemon from server and initialize agent.
 setLevel_id- this function set level id.
-
+## about algorithm for the game
+in this part we have to make the agents get the highest scores on every level in the game, for that i made algorithms to make the fast agents go fewer steps and eat the pokemons with the high score. the algorithm took all the agents and checked which Pokemon were closest that those agents would catch and i used the shortest path algorithm.
