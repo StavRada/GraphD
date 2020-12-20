@@ -1,15 +1,15 @@
-#pokemon game
+# pokemon game
 
 ![alt text](https://github.com/StavRada/GraphD/blob/master/data/Game.png)
 
  In this project we dealt with the development of data structures of directed weighted graph, after that we implemented a number of algorithms on the graph such as: connected, shortest path distance and more…
-###About Graph:
+## About Graph:
  Graph is a collection of points and lines that connect pairs of points.
 The points are called Vertices and the lines called edges.
 In the first part in the project we implemented a weighted directed graph this is graph that when there is meaning in the direction of a directed edge - it exits from one node and enters another node. 
 In the second part of the project we use the data structure and algorithms we have developed to realize the "Pokemon Challenge" game, which includes processes, a graphical interface, and an automated counterplay system server.
 
-###The first class is DWGraph_Ds:
+### The first class is DWGraph_Ds:
 In this class there is edges size, mode counter (mc) and graph, I used hash map for the nodes and hash map for the edges.
 and the functions are:
 Get node – get the key of this node from linked hash map
@@ -35,7 +35,7 @@ get Weight- we gets the weight of the edge or node
 set location- this function sets the location by 3 points (x,y,z)
 get location- this function returns the location of this node
 
-###The second class is DWGraph Algo (algorithm):
+### The second class is DWGraph Algo (algorithm):
 In this class there are algorithms that we used to graph,
 Is connected – I used algorithms to check if all nodes in graph are connected for that I used Tarjan(strongly connected components) algorithm and  Dfs (depth first search) algorithm. 
  
@@ -51,7 +51,7 @@ Init- The function Initialize the graph
 Save- The functions save the graph to fil
 Load – The function load the graph to file
 
-##The second part in  this project is "Pokemon Challenge" game ,the classes are: 
+## The second part in  this project is "Pokemon Challenge" game ,the classes are: 
 Arena: this class represents arena with agents moving on the graph and grabs pokemons that avoid from them. The functions in this class are: 
 Set pokemons- the function gets list from type CL_pokemon
 Set agents- the function gets list from type CL_agents
