@@ -22,7 +22,12 @@ public class Ex2 implements Runnable{
 	private static Arena _ar;
 	private int scenario_num=0;
 	private int id=0;
-//main to start the game
+	
+    /**
+     * main to start the game
+     * start from gui
+     * start from cmd
+     */
 	public static void main(String[] a) {
 	
 		//start from gui
@@ -35,9 +40,10 @@ public class Ex2 implements Runnable{
 			Thread client = new Thread(ex2);
 			client.start(); 
 		}
-		
 	}
-
+      /**
+       * this function run the game
+       */
 	@Override
 	public void run() {
 		game_service game = Game_Server_Ex2.getServer(scenario_num); // you have [0,23] games
@@ -67,6 +73,10 @@ public class Ex2 implements Runnable{
 		System.exit(0);
 	}
 	
+	/**
+	 * This function moves the agents 
+	 * according to an algorithm shortest path
+	 */
 	private static void moveAgants(game_service game, directed_weighted_graph g) {
 		//get from server
 		String move = game.move();
@@ -104,7 +114,9 @@ public class Ex2 implements Runnable{
 		}
 	}
 
-// algorithm next node for all pokimone chose shortest pokrmon 
+    /**
+     * algorithm next node for all pokemon choose shortest pokemon 
+     */
 	private static edge_data nextNode(directed_weighted_graph g, int src,List<CL_Pokemon> pok) {
 		double min = Double.MAX_VALUE;
 		dw_graph_algorithms algo = new DWGraph_Algo();
@@ -123,8 +135,10 @@ public class Ex2 implements Runnable{
 		return e;
 	}
 	
-// init the game gui , get pok from server and init agent 
-
+	
+    /**
+     * init the game gui , get pokemon from server and init agent 
+     */
 	private void init(game_service game) {
 		String fs = game.getPokemons();
 		directed_weighted_graph gg = game.getJava_Graph_Not_to_be_used();
@@ -161,7 +175,9 @@ public class Ex2 implements Runnable{
 		catch (JSONException e) {e.printStackTrace();}
 	}
 	
-	// set level id 
+	/**
+	 * set level id 
+	 */
 	public void setLevel_Id(int id,int senrio) {
 		this.scenario_num=senrio;
 		this.id=id;
