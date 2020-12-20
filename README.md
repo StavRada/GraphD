@@ -1,6 +1,6 @@
 # GraphD
 
-![alt text]()
+![alt text](https://github.com/StavRada/GraphD/blob/master/data/pok.jpg)
  In this project we dealt with the development of data structures of directed weighted graph, after that we implemented a number of algorithms on the graph such as: connected, shortest path distance and more…
 About Graph:
  Graph is a collection of points and lines that connect pairs of points.
