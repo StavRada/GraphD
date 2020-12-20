@@ -45,7 +45,7 @@ public class Ex2 implements Runnable{
 		directed_weighted_graph gg = game.getJava_Graph_Not_to_be_used();
 		init(game);
 		game.startGame();
-		_win.setTitle("Ex2 - OOP: (NONE trivial Solution) "+game.toString());
+		_win.setTitle("Ex2 - Game ");
 		long seconds = TimeUnit.MILLISECONDS.toSeconds(game.timeToEnd());
 		int ind=(int)seconds*10;
 		long dt=100;
